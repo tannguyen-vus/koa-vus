@@ -3,17 +3,23 @@ header.global-header .header-logo a .logo {
         height: 28px;
     }
 }
-.home > header {
-    @include media-breakpoint-down(xs) {
-        min-height: 150px;
-    }
-    @include media-breakpoint-down(sm) {
+ 
+@include media-breakpoint-down(xs) {
+        .home > header {
+            min-height: 150px;
+        }
+}
+@include media-breakpoint-down(sm) {
+    .home > header {
         min-height: 300px;
     }
-    @include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(lg) {
+    .home > header {
         min-height: 400px;
     }
 }
+
 
 .parallax-img {
     background: #040404 url("#{$static-path}/images/background.jpeg") no-repeat 50% 50%;
