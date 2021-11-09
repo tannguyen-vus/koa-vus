@@ -4,22 +4,22 @@ header.global-header .header-logo a .logo {
     }
 }
 .home > header {
-    @include media-breakpoint-down(xs,sm) {
+    @include media-breakpoint-down(xs) {
             min-height: 150px;
     }
     
-    @media (min-width: 0px) and (max-width: 576px) {
+    @include media-breakpoint-between(xs,sm) {
             min-height: 300px;
     }
-    @media (min-width: 576px) and (max-width: 768px) {
+    @include media-breakpoint-between(sm,md) {
         min-height: 350px;
 }
-@media (min-width: 768px) and (max-width: 992px) {
+@include media-breakpoint-between(md,lg) {
     min-height: 400px;
 }
 @include media-breakpoint-up(lg) {
-        min-height: 796px;
-    }
+    min-height: 796px;
+}
 }
 
 
