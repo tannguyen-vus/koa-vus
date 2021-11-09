@@ -378,22 +378,6 @@ header.global-header {
 }
 
 
-@media screen and (max-width: 400px) {
-    .home > header {
-        min-height: 150px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .home > header {
-        min-height: 300px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .home > header {
-        min-height: 400px;
-    }
-}
-
 .outer-wrapper {
     min-width: 700px;
     align-items: center;
