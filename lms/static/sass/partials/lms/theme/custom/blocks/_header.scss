@@ -27,11 +27,11 @@ header.global-header .header-logo a .logo {
 .outer-wrapper .course-search .search-input
 {
     @include media-breakpoint-down(xs) {
-        min-height: 280px;
+        width: 280px;
 }
 
 @include media-breakpoint-up(sm) {
-min-height: 500px;
+width: 500px;
 }
 }
 
