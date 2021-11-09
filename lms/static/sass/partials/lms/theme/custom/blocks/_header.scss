@@ -7,18 +7,9 @@ header.global-header .header-logo a .logo {
     @include media-breakpoint-down(xs) {
             min-height: 150px;
     }
-        @include media-breakpoint-down(sm) {
-        min-height: 300px;
-
-    }
-        @include media-breakpoint-down(md) {
-            min-height: 400px;
-    }
-        @include media-breakpoint-down(lg) {
-        min-height: 550px;
-    }
-    @include media-breakpoint-down(xl) {
-        min-height: 796px;
+    
+    @include media-breakpoint-up(sm) {
+            min-height: 300px;
     }
 }
 
