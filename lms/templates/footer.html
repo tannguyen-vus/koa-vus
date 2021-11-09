@@ -27,36 +27,12 @@
       </ul>
     </nav>
     <div class="footer-holder">
-      <ul class="footer-social-list">
-        % for icon in theme_config.html_data()['footerIcons']:
-            <li class="footer-social-item">
-              <a href="${theme_config.html_data()['footerIcons'][icon]['href']}" target="_blank" class="icon-list_link">
-                <svg class="footer-social-icon" viewBox="0 0 35 35">
-                  <use xlink:href="#${theme_config.html_data()['footerIcons'][icon]['src']}" />
-                </svg>
-              </a>
-            </li>
-          % endfor
-      </ul>
       <a class="footer-logo" href="/">
         <img
             src="/static/${theme_config.html_data()['site_variable']}/images/${theme_config.html_data()['footer_logo']}"
             alt='${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}'
         >
       </a>
-      <p class="footer-support">
-        <a class="open-edx-link" target="_blank" href="https://open.edx.org/">
-          <img alt="Powered by Open edX" ${'src=https://files.edx.org/openedx-logos/open-edx-logo-tag-dark.png' if theme_config.html_data()['footer_dark'] else 'src=https://files.edx.org/openedx-logos/open-edx-logo-tag.png'}>
-        </a>
-        by RACCOONGANG
-        <a class="rg-link" target="_blank" href="https://raccoongang.com/">
-          % if theme_config.html_data()['footer_dark']:
-          <svg class="svg-raccoon-white"  viewBox="0 0 100 100"><use xlink:href="#logo-raccoon" /></svg>
-          % else:
-          <svg class="svg-raccoon-colored"  viewBox="0 0 65 53"><use xlink:href="#logo-raccoon-colored" /></svg>
-          % endif
-        </a>
-      </p>
     </div>
   </div>
 </footer>

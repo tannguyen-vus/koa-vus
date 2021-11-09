@@ -278,7 +278,7 @@ header.global-header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 420px;
+    min-height: 796px;
     margin: -20px -20px 0 -20px;
     width: auto;
 
@@ -311,7 +311,7 @@ header.global-header {
 
             max-width: 585px;
             position: relative;
-            margin: 40px auto 0;
+            margin: 500px auto 0;
 
             @include media-breakpoint-down(sm) {
                 margin-top: 30px;
