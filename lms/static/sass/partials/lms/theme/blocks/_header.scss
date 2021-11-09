@@ -465,7 +465,7 @@ header.global-header {
     left: 0;
     top: -100px;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 200px);
     background: #040404 url("#{$static-path}/images/background.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
