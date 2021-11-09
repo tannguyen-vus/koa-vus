@@ -272,6 +272,13 @@ header.global-header {
     }
 }
 
+
+@media screen and (max-width: 400px) {
+    .home > header {
+        min-height: 150px;
+    }
+  }
+
 .home > header {
     display: flex;
     align-items: center;
