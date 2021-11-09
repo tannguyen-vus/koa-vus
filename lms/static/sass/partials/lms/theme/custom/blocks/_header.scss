@@ -4,12 +4,21 @@ header.global-header .header-logo a .logo {
     }
 }
 .home > header {
-    @include media-breakpoint-down(xs) {
+    @include media-breakpoint-down(xs,sm) {
             min-height: 150px;
     }
     
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-between(xs,sm) {
             min-height: 300px;
+    }
+    @include media-breakpoint-between(sm,md) {
+        min-height: 350px;
+}
+@include media-breakpoint-between(md,lg) {
+    min-height: 400px;
+}
+    @include media-breakpoint-up(lg) {
+        min-height: 796px;
     }
 }
 
