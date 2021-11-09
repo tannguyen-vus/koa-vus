@@ -130,6 +130,7 @@ header.global-header {
                     &.sign-in-btn,
                     &.shopping-cart {
                         border-color: $base-color;
+                        border-radius: 50%;
                     }
 
                     &:hover:not([role="menuitem"]):not(.btn) {

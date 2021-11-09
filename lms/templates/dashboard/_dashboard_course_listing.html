@@ -72,16 +72,19 @@ from lms.djangoapps.experiments.utils import UPSELL_TRACKING_FLAG
     <div class="wrapper-course-image" aria-hidden="true">
       % if show_courseware_link and not is_unfulfilled_entitlement:
         % if not is_course_expired:
-            <a href="${course_target}" style="background-image: url(${course_overview.image_urls['small']})" data-course-key="${enrollment.course_id}" class="cover course-target-link" tabindex="-1">
+            <a href="${course_target}" style="background-image: url(${course_overview.image_urls['small']}); background-repeat: no-repeat;
+            background-size: 100% 100%;" data-course-key="${enrollment.course_id}" class="cover course-target-link" tabindex="-1">
               <img src="${course_overview.image_urls['small']}" class="course-image" alt="${_('{course_number} {course_name} Home Page').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
             </a>
         % else:
-            <a class="fade-cover" style="background-image: url(${course_overview.image_urls['small']})">
+            <a class="fade-cover" style="background-image: url(${course_overview.image_urls['small']}); background-repeat: no-repeat;
+            background-size: 100% 100%;">
               <img src="${course_overview.image_urls['small']}" class="course-image" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
             </a>
         % endif
       % else:
-        <a class="cover" style="background-image: url(${course_overview.image_urls['small']})">
+        <a class="cover" style="background-image: url(${course_overview.image_urls['small']}) ;background-repeat: no-repeat;
+        background-size: 100% 100%;">
           <img src="${course_overview.image_urls['small']}" class="course-image" alt="${_('{course_number} {course_name} Cover Image').format(course_number=course_overview.number, course_name=course_overview.display_name_with_default)}" />
         </a>
       % endif

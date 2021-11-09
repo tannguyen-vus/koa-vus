@@ -24,7 +24,16 @@ header.global-header .header-logo a .logo {
     min-height: 600px;
 }
 }
+.outer-wrapper .course-search .search-input
+{
+    @include media-breakpoint-down(xs) {
+        min-height: 280px;
+}
 
+@include media-breakpoint-up(sm) {
+min-height: 500px;
+}
+}
 
 .parallax-img {
     background: #fff url("#{$static-path}/images/background.jpeg") no-repeat 50% 50%;
