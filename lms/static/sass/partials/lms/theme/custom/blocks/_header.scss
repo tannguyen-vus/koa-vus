@@ -9,21 +9,24 @@ header.global-header .header-logo a .logo {
     }
     
     @include media-breakpoint-between(xs,sm) {
-            min-height: 300px;
+            min-height: 200px;
     }
     @include media-breakpoint-between(sm,md) {
-        min-height: 350px;
+        min-height: 250px;
 }
 @include media-breakpoint-between(md,lg) {
+    min-height: 300px;
+}
+@include media-breakpoint-between(lg,xl) {
     min-height: 400px;
 }
-@include media-breakpoint-up(lg) {
-    min-height: 796px;
+@include media-breakpoint-up(xl) {
+    min-height: 600px;
 }
 }
 
 
 .parallax-img {
-    background: #040404 url("#{$static-path}/images/background.jpeg") no-repeat 50% 50%;
+    background: #fff url("#{$static-path}/images/background.jpeg") no-repeat 50% 50%;
     background-size: 100% auto;
 }
