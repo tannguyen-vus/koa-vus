@@ -278,7 +278,7 @@ header.global-header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 696px;
+    min-height: 796px;
     margin: -20px -20px 0 -20px;
     width: auto;
 
@@ -415,9 +415,9 @@ header.global-header {
         }
 
         .search-button {
-            background: transparent;
+           // background: transparent;
             border: none;
-            color: #7b7b7b;
+            //color: #7b7b7b;
             height: 43px;
             right: 0;
 
@@ -465,7 +465,7 @@ header.global-header {
     left: 0;
     top: -100px;
     width: 100%;
-    height: calc(100% + 200px);
+    height: 100%;
     background: #040404 url("#{$static-path}/images/background.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
