@@ -278,7 +278,7 @@ header.global-header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 745px;
+    min-height: 696px;
     margin: -20px -20px 0 -20px;
     width: auto;
 
@@ -377,6 +377,7 @@ header.global-header {
 }
 .outer-wrapper {
     min-width: 700px;
+    align-items: center;
 
     @include media-breakpoint-down(sm) {
         width: 700px;
@@ -404,7 +405,7 @@ header.global-header {
 
         .search-input {
             background: rgba($white, .8);
-            border: 1px solid $white;
+            border: 1px solid $base-color;
             font-size: 16px;
             height: 43px;
 
