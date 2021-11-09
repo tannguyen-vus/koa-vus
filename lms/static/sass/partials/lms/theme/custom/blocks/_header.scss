@@ -1,0 +1,9 @@
+header.global-header .header-logo a .logo {
+    @include media-breakpoint-down(xs) {
+        height: 28px;
+    }
+}
+
+.parallax-img {
+    background: #040404 url("#{$static-path}/images/background.jpeg") no-repeat 50% 0;
+}

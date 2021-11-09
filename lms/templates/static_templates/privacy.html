@@ -1,0 +1,52 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Privacy Policy")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <p>
+            <%block name="pagecontent">
+                % if page_content:
+                    ${page_content}
+                % else:
+                    <h2 style="font-size: 37.5px; color:rgba(20, 68, 133, 1);">Chính Sách Bảo Mật</h2>
+                    <br><br>
+                    <h2 style="left: 120px; top: 347.25px; font-size: 22.5px; font-weight: bold; color:black;">Cung cấp và chia sẻ thông tin</h2>
+                    <p>Toàn thể Ban Lãnh đạo và nhân viên Anh Văn Hôi Việt Mỹ VUS luôn luôn ý thức và tôn trọng tínhbảo mật thông tin cá nhân của học viên. Chúng tôi hiểu phụ huynh cung cấp thông tin cá nhân choVUS nhằm mục đích nhận tư vấn và đăng ký học, VUS cam kết sử dụng các thông tin này với ýthức trách nhiệm cao nhất. Chúng tôi biết quý phụ huynh và học viên mong muốn các thông tin cánhân của mình được an toàn và bảo mật. Vì vậy, một trong những ưu tiên hàng đầu của chúng tôi làáp dụng các biện pháp đặc biệt trong quá trình thu thập, sử dụng và lưu trữ để bảo đảm an toàn vàgiữ bí mật các thông tin mà phụ huynh, học viên cung cấp cho chúng tôi. Tại VUS, hiện tại cũng nhưtrong tương lai, không để lộ các thông tin cá nhân của phụ huynh và học viên cho bất kỳ tổ chức/cánhân nào khác, trừ trường hợp:</p>
+                    <ul>
+                        <li>Chúng tôi được sự đồng ý của phụ huynh (đối với học viên trẻ em), học viên người lớn hoặcđã thông báo và được  trước cho Quý khách.</li>
+                        <li>Chúng tôi được yêu cầu, tùy từng thời điểm, phải cung cấp thông tin cá nhân của phụhuynh, học viên cho các cơ quan Nhà nước, tòa án hoặc những cơ quan luật pháp có thẩmquyền khác. Tuy nhiên, VUS chỉ thực hiện việc cung cấp thông tin như vậy trong phạm viquyền hạn cho phép.</li>
+                    </ul>
+                    <h2 style="font-size: 22.5px; font-weight: bold; color:black;">Thu thập thông tin cá nhân</h2>
+                    <p>Anh Văn Hội Việt Mỹ VUS có thể thu thập các thông tin cá nhân của Quý khách từ các nguồn sau:</p>
+                    <ul>
+                        <li>Thông tin ghi trên đơn đăng ký tư vấn, đăng ký học hoặc các phiếu điền thông tin khác (cácthông tin bao gồm tên, địa chỉ liên lạc,...).</li>
+                        <li>Thông tin từ các tổ chức báo cáo, nghiên cứu người tiêu dùng.</li>
+                        <li>Thông tin cung cấp bởi những người truy cập vào trang web này và từ các cá nhân tham giavào các cuộc thi hoặc chương trình khuyến mại (trực tuyến/điện thoại hoặc trực tiếp tại trungtâm). Chúng tôi chỉ thu thập thông tin từ những cá nhân tình nguyện. Thông tin sẽ được sửdụng để chúng tôi gửi thông báo/giới thiệu những khóa học và các tài liệu tiếp thị khác màchúng tôi cho là phù hợp với nhu cầu của các cá nhân trên. Chúng tôi cũng có thể mờinhững cá nhân truy cập trang web này tham gia vào các nghiên cứu/khảo sát thị trường vàcác hoạt động tương tự khác.</li>
+                    </ul>
+                    <h2 style="font-size: 22.5px; font-weight: bold; color:black;">Sử dụng thông tin</h2>
+                    <p>Mục đích của VUS khi yêu cầu, thu thập và lưu trữ các thông tin cá nhân của Quý khách là để:</p>
+                    <ul>
+                        <li>Hỗ trợ VUS tốt hơn trong việc phục vụ cũng như chăm sóc phụ huynh học viên tốt hơn.</li>
+                        <li>Hỗ trợ VUS xác định phụ huynh - học viên và bảo mật tốt hơn các thông tin cá nhân vàthông tin học tập của học viên tại VUS.</li>
+                        <li>Giúp VUS nắm bắt các nhu cầu học tiếng Anh của phụ huynh, học viên nhằm tư vấn cáckhóa học phù hợp.</li>
+                        <li>Hình thức tư vấn khóa học: Email, SMS, gọi điện thoại tư vấn.</li>
+                        <li>Nhằm tuân thủ các quy định của Pháp luật hiện hành.</li>
+                    </ul>
+                    <h2 style="font-size: 22.5px; font-weight: bold; color:black;">Tính bảo mật của thông tin</h2>
+                    <p>Toàn thể nhân viên VUS đều được huấn thị triệt để về tầm quan trọng của việc bảo mật thông tinquý phụ huynh và học viên như Tôn chỉ hoạt động của VUS. Trong nội bộ VUS chỉ những nhân viêncó thẩm quyền mới được truy cập thông tin khách hàng để cung cấp các dịch vụ theo yêu cầu củaphụ huynh học viên.Hơn nữa, chúng tôi cũng áp dụng quy trình bảo mật và các thiết bị an ninh điệntử theo đúng quy định của VUS nhằm đảm bảo an toàn thông tin cá nhân của phụ huynh và họcviên.</p>
+                    <p>Tại VUS đang thực hiện tất cả các biện pháp cần thiết để đảm bảo thông tin cá nhân của Quý kháchkhông bị lưu trữ lâu hơn mức cần thiết mà vẫn tuân thủ đầy đủ những quy định lưu trữ thông tinnhận dạng cá nhân của các cơ quan nhà nước có thẩm quyền. VUS thường xuyên cập nhật để ứngdụng các tiến bộ mới nhất trong công nghệ bảo mật và mã hóa. Tuy nhiên, việc truyền dữ liệu quamạng internet trên thực tế không thể có sự an toàn tuyệt đối. Vì vậy, dù VUS luôn cố gắng hết sứcđể bảo mật thông tin, chúng tôi cũng không thể chắc chắn hay bảo đảm mức an toàn tuyệt đối khinhững thông tin khách hàng gửi tới VUS. Khi thông tin tới được VUS, chúng tôi sẽ tiến hành cácbước cần thiết để đảm bảo tính bảo mật của các thông tin cá nhân đó trong hệ thống của chúng tôi.Khi quý phụ huynh, học viên không còn theo học tại hoặc tạm dừng học tập tại  VUS, chúng tôi sẽvẫn tôn trọng triệt để những nguyên tắc bảo mật đối với thông tin cá nhân như đã trình bày ở trên.</p>
+                    <h2 style="font-size: 22.5px; font-weight: bold; color:black;">Đảm bảo an ninh</h2>
+                    <p>VUS luôn nỗ lực áp dụng những tiêu chuẩn an toàn cao nhất để bảo vệ lợi ích cho quý phụ huynh,học viên. Khi đặt Tên truy cập và Mật khẩu, quý phụ huynh nên tránh sử dụng các thông tin dễ cókhả năng bị nhận dạng như tên, địa chỉ, số điện thoại và ngày sinh...</p>
+                    <h2 style="font-size: 22.5px; font-weight: bold; color:black;">Bản quyền và thương hiệu</h2>
+                    <p>Tất cả các thiết kế, biểu tượng, hình ảnh và các thông tin khác ở trên trang web này là tài sản thuộcsở hữu trí tuệ của VUS. Mọi sự sao chép, thay đổi, lưu trữ, chuyển dịch, mô phỏng, phát tán, sửdụng bất kỳ phần nào của tài liệu này vì các mục đích thương mại hay công cộng nếu không đượcVUS cho phép bằng văn bản đều bị nghiêm cấm.</p>
+                    <h2 style="font-size: 22.5px; font-weight: bold; color:black;">Đồng ý và thay đổi đối với Quy định về an ninh và bảo mật thông tin cánhân</h2>
+        <p>Quý phụ huynh hiểu rõ và đồng ý rằng việc sử đăng ký trực tuyến VUS đồng nghĩa với việc quý phụhuynh, học viên chấp thuận các Điều khoản và điều kiện và Quy định về an ninh và bảo mật củaVUS. Đây là bản Quy định về an ninh và bảo mật có hiệu lực hiện hành của VUS. VUS, tại bất kỳthời điểm nào, có quyền sửa đổi bằng cách công bố một Quy định về an ninh và bảo mật mới trêntrang web của VUS tại  <a href="https://www.vus.edu.vn">www.vus.edu.vn</a>. Trường hợp quý phụ huynh có bất kỳ thắc mắc nào, vuilòng liên hệ trung tâm VUS gần nhất để được hỗ trợ. Chúng tôi luôn mong muốn cung cấp cho phụhuynh và học viên những khóa học chất lượng tốt nhất</p>
+                % endif
+            </%block>
+        </p>
+    </section>
+</main>

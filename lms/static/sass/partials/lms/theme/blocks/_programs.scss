@@ -1,0 +1,65 @@
+.program-list-wrapper {
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.program-details {
+    .course-list-headings {
+        overflow: hidden;
+    }
+
+    .program-details-wrapper .course-list-headings .motivating-section,
+    aside.program-sidebar .motivating-section {
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+.sidebar .aside.program-advertise {
+    padding: 20px 10px;
+
+    .ad-link .new-programs-btn {
+        @include simple($base-color);
+    }
+}
+
+.program-details .program-details-wrapper {
+    .course-list-heading {
+        color: $base-color;
+    }
+
+    .program-details-header .authoring-organizations .heading {
+        color: $base-color;
+    }
+
+    .program-course-card .course-details .course-title .course-title-link {
+        color: $base-color;
+
+        &:visited {
+            color: $base-color;
+        }
+    }
+
+    .enroll-button button,
+    .enroll-button .enroll-course-button,
+    .course-enroll-view .view-course-button {
+        @include flat($base-color);
+    }
+}
+
+.program-sidebar {
+    .divider-heading {
+        color: $base-color;
+    }
+
+    .sidebar-button-wrapper .sidebar-button {
+        background-color: $base-color;
+        color: $white;
+
+        &:hover {
+            background-color: $link-hover;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "./files_and_uploads";
+
+// custom buttons colors for the modal in video xblock
+
+.xmodule_edit.xmodule_VideoBlock .editor-with-tabs .edit-header .editor-tabs .inner_tab_wrap a.tab {
+    &:hover,
+    &:focus,
+    &.current {
+        background: $base-color !important;
+    }
+}
+
+// course name break words on the home page
+
+.view-dashboard .course-item .course-link,
+.view-certificates .actual-course-title {
+    word-break: break-word;
+}
+
+// library buttons
+
+.view-library .wrapper-mast .mast.has-navigation .nav-actions {
+    top: initial;
+
+    .button {
+        font-size: 12px;
+        line-height: 17px;
+        padding-bottom: ($baseline / 3);
+    }
+}
+
+// title color in a modal window
+
+.wrapper-notification .copy .title,
+.wrapper-alert .copy .title,
+.prompt .copy .title {
+    color: $white;
+
+    span.fa-warning {
+        color: $red-l1;
+    }
+}
+
+.wrapper-header .branding a img {
+    width: 100%;
+}

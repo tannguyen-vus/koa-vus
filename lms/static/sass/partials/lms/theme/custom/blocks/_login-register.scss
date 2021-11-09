@@ -1,0 +1,23 @@
+.login-register .login-providers button.button-saml-default {
+    width: 180px;
+    background-color: #4f85ec;
+    color: $white;
+    border: 0;
+    box-shadow: 0 0 5px rgba($black, .2);
+    font-weight: 600;
+    padding-left: 43px;
+
+    .icon {
+        background: $white;
+        top: 1px;
+        left: 1px;
+        border-radius: 2px;
+        height: 33px;
+        width: 33px;
+        line-height: 33px;
+    }
+
+    &:hover .icon {
+        top: 1px;
+    }
+}
