@@ -278,7 +278,7 @@ header.global-header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 796px;
+    min-height: 745px;
     margin: -20px -20px 0 -20px;
     width: auto;
 
@@ -311,7 +311,7 @@ header.global-header {
 
             max-width: 585px;
             position: relative;
-            margin: 500px auto 0;
+            margin: 5px auto 0;
 
             @include media-breakpoint-down(sm) {
                 margin-top: 30px;
@@ -375,7 +375,90 @@ header.global-header {
         }
     }
 }
+.outer-wrapper {
+    min-width: 700px;
 
+    @include media-breakpoint-down(sm) {
+        width: 700px;
+        min-width: auto;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    @include only-for-IE {
+        display: table;
+        min-height: 420px;
+        box-sizing: border-box;
+    }
+
+    .course-search {
+        @include clearfix();
+
+        max-width: 585px;
+        position: relative;
+        margin: 5px auto 0;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+        }
+
+        .search-input {
+            background: rgba($white, .8);
+            border: 1px solid $white;
+            font-size: 16px;
+            height: 43px;
+
+            &::placeholder {
+                color: #4b4b4b;
+            }
+        }
+
+        .search-button {
+            background: transparent;
+            border: none;
+            color: #7b7b7b;
+            height: 43px;
+            right: 0;
+
+            @include rtl {
+                left: 0;
+                right: auto;
+            }
+
+            &:hover,
+            &:focus {
+                background: transparent;
+                opacity: .8;
+            }
+        }
+    }
+}
+
+.title {
+    width: 100%;
+    margin: 0;
+    min-height: auto;
+    background: transparent;
+    box-shadow: none;
+
+    @include only-for-IE {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    > .heading-group {
+        width: 100%;
+        padding-bottom: 0;
+
+        h1,
+        p {
+            color: $white;
+            text-align: center;
+            text-shadow: 1px 2px 0 rgba(77, 77, 77, .34);
+            line-height: normal;
+        }
+    }
+}
 .parallax-img {
     position: absolute;
     left: 0;
