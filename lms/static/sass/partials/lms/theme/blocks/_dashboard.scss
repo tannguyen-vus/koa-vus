@@ -211,13 +211,13 @@
                 .wrapper-course-image {
                     display: block;
                     height: auto;
-                    max-height: 100%;
+                    //max-height: 100%;
                     width: 260px;
                     flex-shrink: 0;
                     margin-right: 0;
                     min-height: 160px;
                     max-width: 100%;
-
+                    margin-top: 15px;    
                     @include media-breakpoint-down(sm) {
                         flex-grow: 1;
                     }
