@@ -42,7 +42,8 @@ $(document).ready(function () {
   // update iframe height in the textblock tab
   updateIframeHeight();
   $(window).on('resize', updateIframeHeight);
-
+  
+  window.onscroll = function() {vus_sticky()};
 });
 
 // fix adaptive for textblock iframe
@@ -50,7 +51,7 @@ function updateIframeHeight() {
     const iframeWidth = $('#viewer-frame').width();
     $('#viewer-frame').height(iframeWidth * 1.3);
 }
-window.onscroll = function() {vus_sticky()};
+
 // sticky header nav bar
 function vus_sticky() {
   var header = document.getElementsByTagName('head')[0];
