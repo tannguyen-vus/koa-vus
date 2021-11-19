@@ -39,6 +39,9 @@ from openedx.core.djangoapps.user_authn.utils import should_redirect_to_logistra
     </div>
   % endif
   % if allows_login:
+  <div class="mobile-nav-item hidden-mobile nav-item">
+    <a href="/">${_('Home')}</a>
+  </div>
     % if can_discover_courses:
       <div class="mobile-nav-item hidden-mobile nav-item">
         <a href="/courses">${_('Explore courses')}</a>
