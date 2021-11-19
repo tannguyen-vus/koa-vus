@@ -42,23 +42,12 @@ $(document).ready(function () {
   // update iframe height in the textblock tab
   updateIframeHeight();
   $(window).on('resize', updateIframeHeight);
-  
-  window.onscroll = function() {vus_sticky()};
+
+ 
 });
 
 // fix adaptive for textblock iframe
 function updateIframeHeight() {
     const iframeWidth = $('#viewer-frame').width();
     $('#viewer-frame').height(iframeWidth * 1.3);
-}
-
-// sticky header nav bar
-function vus_sticky() {
-  var header = document.getElementsByTagName('head')[0];
-  var sticky = header.offsetTop;
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
 }

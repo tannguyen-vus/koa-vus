@@ -39,12 +39,3 @@ width: 500px;
     background: #fff url("#{$static-path}/images/background.jpeg") no-repeat 50% 50%;
     background-size: 100% auto;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .home {
-    padding-top: 102px;
-}
