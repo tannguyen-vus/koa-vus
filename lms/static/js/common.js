@@ -50,3 +50,14 @@ function updateIframeHeight() {
     const iframeWidth = $('#viewer-frame').width();
     $('#viewer-frame').height(iframeWidth * 1.3);
 }
+window.onscroll = function() {vus_sticky()};
+// sticky header nav bar
+function vus_sticky() {
+  var header = document.getElementsByTagName('head')[0];
+  var sticky = header.offsetTop;
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
