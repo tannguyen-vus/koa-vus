@@ -53,7 +53,8 @@
             .course {
                 background: $white;
                 //border-bottom-color: $base-color2;
-
+                border-bottom: 0px;
+                
                 &:hover,
                 &:focus {
                     background: $white;
