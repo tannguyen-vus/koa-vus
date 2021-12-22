@@ -79,28 +79,23 @@
     }
     .login-provider
     {
-        .button-oa2-azuread-oauth2
-        {
-                width: 180px;
-                background-color: #4f85ec;
-                color: #fff;
-                border: 0;
-                font-weight: 600;
-                padding-left: 43px;
-            
-        }
-        
-        .button-oa2-azuread-oauth2
-        {
-                &:hover{
-                width: 180px;
-                background-color: #124fc2;
-                color: #fff;
-                border: 0;
-                font-weight: 600;
-                padding-left: 43px;
-                }
-            
-        }
+        &.button-oa2-azuread-oauth2 {
+            color: white;
+            border-color:#4f85ec;;
+            background-color: #4f85ec;;
+      
+            .icon {
+              background: transparent;
+            }
+      
+            &:hover,
+            &:focus {
+              background-color: #115ce7;
+              border: 1px solid #115ce7;
+              color: $white;
+            }
+          }
     }
+      
+    
 }
