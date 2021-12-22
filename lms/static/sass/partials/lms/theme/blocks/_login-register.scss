@@ -77,10 +77,9 @@
     .paragon__form-control {
         border-color: $gray-600;
     }
-    .login-provider
+
+    .button-oa2-azuread-oauth2
     {
-        .button-oa2-azuread-oauth2
-        {
             width: 180px;
             background-color: #4f85ec;
             color: #fff;
@@ -88,6 +87,20 @@
             box-shadow: 0 0 5px rgb(0 0 0 / 20%);
             font-weight: 600;
             padding-left: 43px;
-        }
+        
+    }
+    
+    .button-oa2-azuread-oauth2
+    {
+            &:hover{
+            width: 180px;
+            background-color: #124fc2;
+            color: #fff;
+            border: 0;
+            box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+            font-weight: 600;
+            padding-left: 43px;
+            }
+        
     }
 }
